@@ -90,6 +90,7 @@ body.has-searchbox #header{
 }
 .main-search .reset-padding{
     padding-left:0px;
+    min-width: 72px;
 }
 .main-search .ui-button{
     //@include button- (red);
