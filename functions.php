@@ -213,9 +213,9 @@ FUNCTIONS
             if($i%$col1_max_cat == 0){
                 if($i > 0) { echo '</div>'; }
                 if($i == 0) {
-                   echo '<div class="cell_3 first_cel">';
+                   echo '<div class="first_cel">';
                 } else {
-                    echo '<div class="cell_3">';
+                    echo '<div>';
                 }
             }
         ?>
@@ -239,11 +239,9 @@ FUNCTIONS
                  <?php if ( osc_count_subcategories() > 0 ) { ?>
                    <ul>
                          <?php while ( osc_has_subcategories() ) { ?>
-                             <li>
+                             <li style="display: inline;">
                              <?php if( osc_category_total_items() > 0 ) { ?>
                                  <a class="category sub-category <?php echo osc_category_slug() ; ?>" href="<?php echo osc_search_category_url() ; ?>"><?php echo osc_category_name() ; ?></a> <span>(<?php echo osc_category_total_items() ; ?>)</span>
-                             <?php } else { ?>
-                                 <a class="category sub-category <?php echo osc_category_slug() ; ?>" href="#"><?php echo osc_category_name() ; ?></a> <span>(<?php echo osc_category_total_items() ; ?>)</span>
                              <?php } ?>
                              </li>
                          <?php } ?>
