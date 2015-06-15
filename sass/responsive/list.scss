@@ -26,11 +26,11 @@ body.search .listing-grid .listing-card{
     display:none;
 }
 .listing-grid .listing-basicinfo a{
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    width: 100%;
-    display: block;
+    /* white-space: nowrap; */
+    /* overflow: hidden; */
+    /* text-overflow: ellipsis; */
+    /* width: 100%; */
+    /* display: block; */
 }
 .listing-grid .listing-card:nth-child(3n),
 body.search .listing-card:nth-child(3n){
